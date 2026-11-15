@@ -1,0 +1,28 @@
+# Single source of truth for paths, domain knowledge and reproducibility settings.
+# Domain ranges come from the case statement.
+
+seed: 42
+
+paths:
+  raw_data: data/raw/fragrance_stability_dataset_corrupted_20260601_161558.csv
+  raw_data_sha256: 870204af5b3e6ab0f320f3699b40624dd7ad20401eff70668723e91e762f2d36
+  processed_dir: data/processed
+  figures_dir: reports/figures
+
+target: stability_months
+
+# Columns derived from the target -> never used as features (leakage)
+leakage_columns:
+  - purity_grade
+  - oxidation_risk_flag
+
+# Normal operating ranges per sensor (from the use case statement)
+normal_ranges:
+  reaction_temperature_celsius: [75.0, 100.0]
+  vessel_pressure_bar: [2.0, 3.0]
+  refractive_index: [1.43, 1.49]
+  density_g_cm3: [0.80, 0.90]
+  ph_level: [5.0, 6.0]
+  mixing_torque_nm: [9.0, 12.5]
+  mass_flow_rate_kg_h: [380.0, 520.0]
+  stability_months: [18.0, 30.0]
