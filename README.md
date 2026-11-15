@@ -1,4 +1,4 @@
-# Fragrance shelf-life stability — root cause analysis and prediction
+# Fragrance shelf-life stability; root cause analysis and prediction
 
 Business case for the Symrise Graduate Program in Data Science (final round).
 
