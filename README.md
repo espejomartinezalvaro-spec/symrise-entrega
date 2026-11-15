@@ -1,6 +1,6 @@
 # Fragrance shelf-life stability; root cause analysis and prediction
 
-Business case for the Symrise Graduate Program in Data Science (final round).
+Business case for the Symrise Graduate Program in Data Science.
 
 ## Objectives
 1. **Root cause analysis**: why has the shelf-life (`stability_months`) of a fragrance compound dropped?
