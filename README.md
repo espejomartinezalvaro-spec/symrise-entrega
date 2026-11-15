@@ -11,7 +11,7 @@ Business case for the Symrise Graduate Program in Data Science (final round).
 - **Model**: gradient boosting on the 7 process sensors, validated on future data (temporal split): MAE 0.73 months (vs 1.63 for the per-reactor mean), R² 0.80, and a 90% prediction interval with 88.9% coverage. SHAP explanations agree with the root cause.
 
 ## Slides
-[`reports/SymrisePPTX.pdf`](reports/SymrisePPTX.pdf) (also as `presentation.pptx`, with speaker notes). They present the results first, then the work phase by phase.
+[`reports/SymrisePPTX.pdf`](reports/SymrisePPTX.pdf) (also as `presentation.pptx'). They present the results first, then the work phase by phase.
 
 ## Method: CRISP-DM
 | Phase | Where |
@@ -35,14 +35,4 @@ src/data.py           load_raw() and clean(): shared loading and cleaning, with 
 reports/              Slides
 ```
 
-## Reproducing the results
-1. Place the original dataset (not included) at
-   `data/raw/fragrance_stability_dataset_corrupted_20260601_161558.csv`
-   (SHA-256 `870204af5b3e6ab0f320f3699b40624dd7ad20401eff70668723e91e762f2d36`).
-2. Install the pinned dependencies:
-   ```bash
-   python -m venv .venv
-   .venv\Scripts\activate        # Windows (source .venv/bin/activate on Linux/macOS)
-   pip install -r requirements.txt
-   ```
-3. Run the notebooks in order (02 → 05). Notebook 03 writes the cleaned parquet used by 04 and 05.
+
